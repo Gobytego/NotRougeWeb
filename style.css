@@ -1,0 +1,39 @@
+/* Custom scrollbar for better aesthetics */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px; /* width of the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #2a002a; /* color of the track */
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #660066; /* color of the scroll thumb */
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #990099; /* color of the scroll thumb on hover */
+}
+
+/* Base button styling - Tailwind will add more */
+button {
+    min-width: 120px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background-color: #6a05ad; /* A shade of purple */
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #7d06c0; /* Lighter purple on hover */
+}
+
+/* Ensure text elements within the game log and stats display wrap */
+#game-log, #player-stats-display {
+    white-space: pre-wrap; /* Preserve whitespace and wrap lines */
+    word-break: break-word; /* Break words if necessary to prevent overflow */
+}
